@@ -8,7 +8,12 @@ public class Main {
 		System.out.println("please enter a number");
 		
 		InOutManag io=new InOutManag();
-		io.input(scan.nextInt());
+		int array[] = io.input(scan.nextInt());
+		
+		Sort s = new Sort();
+		s.bubbleSort(array);
+		
+		io.output(array);
 		
 	}
 
